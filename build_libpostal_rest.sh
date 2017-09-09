@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-curl https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz > go1.8.1.linux-amd64.tar.gz
+curl https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz > go1.9.linux-amd64.tar.gz
 
-echo "a579ab19d5237e263254f1eac5352efcf1d70b9dacadb6d6bb12b0911ede8994  go1.8.1.linux-amd64.tar.gz" | sha256sum -c
+echo "d70eadefce8e160638a9a6db97f7192d8463069ab33138893ad3bf31b0650a79"  go1.9.linux-amd64.tar.gz" | sha256sum -c
 
-tar xzf go1.8.1.linux-amd64.tar.gz
+tar xzf go1.9.linux-amd64.tar.gz
 
 export GOROOT=/libpostal/go
 export GOPATH=/libpostal/workspace
